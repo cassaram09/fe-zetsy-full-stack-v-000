@@ -1,14 +1,16 @@
 /*////////////// Fonts //////////////*/
 
-/* link the web font used for the level 1 heading here */
-
+@fontface {
+  font-family: Baskerville;
+  src: url(fonts/Baskerville.tcc);
+}
 /*////////// Global Styles //////////*/
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
 	font-family: 'Times New Roman', serif; 
-}
+} 
 
 .wrapper {
 	width: 960px;
@@ -17,4 +19,98 @@ body {
 	padding: 0 45px 20px;
 }
 
+.clearfix:after {
+  content:".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
 /* Write all remaining styles here */
+
+/* ///////// TEXT STYLES /////////// */
+
+h1 {
+  font-family: Baskerville, serif;
+  font-size: 5em;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+h2 {
+  font-size: 2em;
+  color: rgb(111,127,122);
+  margin: 26.5px 0px 26.5px 0px;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  font-size: 1em;
+  margin: 0px 0px 20px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(152,173,166);
+}
+
+a:hover {
+  color: rgb(111,127,122);
+}
+
+
+/* /////// FEATURE ////// */
+
+#featured-img{
+  border: 5px solid rgb(152,173,166);
+  margin: 5px 0px 0px 0px;
+}
+
+/* ///////// ABOUT /////// */
+
+#about a {
+  color: #1783bb;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
+
+/* ///////// PRESS /////// */
+
+.col-img {
+  border: 5px solid rgb(203, 203, 203);
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  padding: 1px;
+
+}
+
+.col-1-4 {
+  float: left;
+  width: 22%;
+  margin-right: 3%;
+}
+
+.col-img:hover {
+  border: 5px solid rgb(111,127,122);
+  transform: rotate(360deg);
+}
+
+
+/* ///////// FOOTER /////// */
+
+footer {
+  clear: both;
+}
+
+footer p {
+  text-align: right;
+  margin: 20px 0px 20px 0px;
+  font-size: 0.8em;
+}
+
